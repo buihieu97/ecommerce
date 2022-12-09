@@ -21,6 +21,7 @@ body {
   line-height: 171%;
   color: var(--color-text);
   font-weight: 400;
+  overflow-x: hidden;
 }
 .container {
   max-width: 136.8rem;
@@ -70,7 +71,27 @@ input {
   justify-content: center;
   display: none;
 }
-
+.green-snake {
+  background-color: #7cb93e !important;
+}
+.ball-blue {
+  background: #33abc6 !important;
+}
+.carib-green {
+  background: #1ccd8d !important;
+}
+.ultra-green {
+  background: #3f65ea !important;
+}
+.watermelon {
+  background: #f64a69 !important;
+}
+.pale-orange {
+  background: #f9a85d !important;
+}
+.purple {
+  background: #a635ec !important;
+}
 .dot {
   width: 12px;
   height: 12px;
