@@ -21,6 +21,7 @@ body {
   line-height: 171%;
   color: var(--color-text);
   font-weight: 400;
+  overflow-x: hidden;
 }
 .container {
   max-width: 136.8rem;
