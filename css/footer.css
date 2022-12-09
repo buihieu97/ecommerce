@@ -129,9 +129,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .footer-bottom {
-    text-align: center;
+  .inc {
     width: 100%;
+    text-align: center;
   }
   .center,
   .btn-to-top {
@@ -173,7 +173,9 @@
   .footer-sub-menu {
     display: none;
   }
-
+  .footer {
+    margin-bottom: 3.2rem;
+  }
   .footer-item label {
     display: block;
     background-color: #f5f6f8;
