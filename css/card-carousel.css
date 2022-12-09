@@ -1,0 +1,118 @@
+.items-slider {
+  margin-bottom: 4.5rem;
+}
+.card-carousel-title {
+  margin-bottom: 5.5rem;
+}
+.slider-item {
+  cursor: pointer;
+}
+.h3-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: var(26/18);
+  margin-bottom: 0.8rem;
+}
+.sub-tittle {
+  font-weight: 500;
+  line-height: calc(18 / 14);
+  color: var(--color-subtext);
+}
+.card-carousel-box {
+  position: relative;
+}
+.slider-carousel {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2.4rem;
+  text-align: center;
+}
+
+.slider-media {
+  padding: 0.8rem;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 2.2rem;
+}
+
+.name-card {
+  font-weight: 500;
+  line-height: 129%;
+}
+
+.btn-carousel {
+  position: absolute;
+  background: #f5f6f8;
+  border-radius: 99rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  cursor: pointer;
+  top: 5rem;
+}
+.btn-prev {
+  left: -7rem;
+}
+.btn-next {
+  right: -7rem;
+}
+.btn-carousel img {
+  width: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .btn-carousel {
+    display: none;
+  }
+
+  .slider-carousel {
+    grid-template-columns: unset;
+    grid-auto-flow: column;
+
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    grid-auto-columns: calc((100% - 14.4rem) / 5);
+  }
+  .slider-item {
+    scroll-snap-align: end;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slider-carousel {
+    padding: 1.6rem;
+    scroll-padding: 1.6rem;
+  }
+  .items-slider .box-dot {
+    bottom: -1.6rem;
+  }
+  .card-carousel-box {
+    margin: -1.6rem;
+  }
+  .items-slider {
+    margin-bottom: 6rem;
+  }
+
+  .slider-carousel {
+    gap: 1.6rem;
+    grid-auto-columns: calc((100% - 1.6rem) / 2);
+  }
+  .slider-item {
+    scroll-snap-align: start;
+  }
+  .card-carousel-title {
+    margin-bottom: 2.4rem;
+  }
+  .h3-title {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,114 @@
+.picked-item,
+.item-carousel {
+  margin-bottom: 4.8rem;
+}
+.box-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.btn-view-all {
+  color: var(--color-main);
+  cursor: pointer;
+}
+.pick-item-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2.4rem;
+}
+.picked-item-card .card-title {
+  margin-bottom: 1.6rem;
+  font-size: 1.2rem;
+  line-height: calc(16 / 12);
+}
+.box-card-item {
+  position: relative;
+}
+.box-card-item .btn-carousel {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pick-item-list .picked-item-card {
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1rem;
+}
+.picked-item-card .card-media {
+  padding: 0;
+  margin-bottom: 1.6rem;
+}
+.picked-item-card .icon-favorite {
+  border: 1px solid var(--color-border);
+}
+.picked-item-card .car-title {
+  font-size: 1.2rem;
+  line-height: calc(16 / 12);
+  margin-bottom: 1.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .pick-item-list {
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    grid-template-columns: unset;
+    gap: 2.4rem;
+    scroll-padding: 2.4rem;
+    padding: 2.4rem;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 7.2rem) / 4);
+  }
+  .picked-item-card {
+    scroll-snap-align: start;
+  }
+  .box-card-item {
+    margin: -2.4rem;
+  }
+
+  .pick-item-list .box-dot {
+    display: flex;
+    bottom: -2.8rem;
+  }
+  .picked-item,
+  .item-carousel {
+    margin-bottom: 10rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pick-item-list {
+    grid-auto-columns: calc((100% - 4.8rem) / 3);
+  }
+}
+@media screen and (max-width: 576px) {
+  .pick-item-list {
+    gap: 1.6rem;
+    grid-auto-columns: calc((100% - 1.6rem) / 1.5);
+  }
+  .box-heading {
+    margin-bottom: 2.4rem;
+  }
+  .btn-view-all {
+    display: none;
+  }
+  .h3-title {
+    font-size: 1.6rem;
+    line-height: var(20/16);
+  }
+  .pick-item-list .box-dot {
+    bottom: -1.2rem;
+  }
+  .picked-item,
+  .item-carousel {
+    margin-bottom: 6.8rem;
+  }
+  .box-tab-show .box-card {
+    grid-auto-columns: 75%;
+    gap: 1.6rem;
+  }
+}

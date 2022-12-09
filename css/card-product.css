@@ -1,0 +1,124 @@
+.product-list {
+  position: relative;
+  margin-bottom: 4.8rem;
+}
+
+.box-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+}
+
+.card-item {
+  border-radius: 5px;
+  padding: 2.4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.card-item:nth-child(1) {
+  background-color: #d3fbd9;
+}
+.card-item:nth-child(2) {
+  background-color: #ffe4bd;
+}
+.card-item:nth-child(3) {
+  background-color: #d9abfd;
+}
+.card-item:nth-child(4) {
+  background-color: #fdf0ab;
+}
+.card-media {
+  padding: 3.2rem;
+  padding-bottom: 0;
+}
+.icon-favorite {
+  cursor: pointer;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 99rem;
+  top: 1.6rem;
+  right: 1.6rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-favorite img {
+  width: 1.6rem;
+}
+.box-color {
+  margin-bottom: 2.4rem;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: start;
+}
+.box-color span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 16/12;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+}
+.color-list {
+  display: flex;
+  gap: 8px;
+}
+.color-item {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 99rem;
+  background: red;
+}
+.card-title {
+  margin-bottom: 8px;
+}
+
+.card-price {
+  margin-top: auto;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .scroll-container {
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    grid-template-columns: unset;
+  }
+  .scroll-item {
+    scroll-snap-align: start;
+  }
+  .box-card {
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 4.8rem) / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-card {
+    grid-auto-columns: calc((100% - 2.4rem) / 2);
+  }
+}
+@media screen and (max-width: 576px) {
+  .box-card {
+    grid-auto-columns: 100%;
+  }
+  .box-dot {
+    display: flex;
+  }
+  .product-lis {
+    margin-bottom: 6rem;
+  }
+}
