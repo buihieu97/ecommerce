@@ -77,4 +77,11 @@
   .tab-show {
     margin-bottom: 3.2rem;
   }
+  .box-tab-show {
+    margin: -1.6rem;
+  }
+  .box-tab-show .box-card {
+    padding: 1.6rem;
+    scroll-padding: 0 1.6rem;
+  }
 }
