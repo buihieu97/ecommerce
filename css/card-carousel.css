@@ -72,7 +72,7 @@
   .slider-carousel {
     grid-template-columns: unset;
     grid-auto-flow: column;
-
+    scroll-snap-stop: always;
     overflow: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;

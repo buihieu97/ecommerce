@@ -63,6 +63,7 @@
     scroll-padding: 2.4rem;
     padding: 2.4rem;
     grid-auto-flow: column;
+    scroll-snap-stop: always;
     grid-auto-columns: calc((100% - 7.2rem) / 4);
   }
   .picked-item-card {

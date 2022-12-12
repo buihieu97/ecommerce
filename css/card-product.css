@@ -102,6 +102,7 @@
     touch-action: manipulation;
     -webkit-overflow-scrolling: touch;
     grid-template-columns: unset;
+    scroll-snap-stop: always;
   }
   .scroll-item {
     scroll-snap-align: start;
