@@ -11,6 +11,7 @@ html {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 ::placeholder {
   color: #9a9a9a;
@@ -57,6 +58,10 @@ input {
   height: 2.4rem;
   cursor: pointer;
 }
+button {
+  outline: none;
+  border: none;
+}
 
 *::-webkit-scrollbar {
   display: none;
@@ -64,7 +69,6 @@ input {
 .box-dot {
   position: absolute;
   bottom: -3.6rem;
-  display: flex;
   gap: 8px;
   left: 0;
   right: 0;
@@ -100,9 +104,9 @@ input {
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.dot:hover {
+/* .dot:hover {
   background-color: var(--color-main);
-}
+} */
 @media only screen and (max-width: 768px) {
   .container {
     padding: 0 1.6rem;

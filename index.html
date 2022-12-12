@@ -1,877 +1,879 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <script
-      src="https://kit.fontawesome.com/95179267e8.js"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header-box">
-        <div class="header-top">
-          <a href="#!" class="header-logo">
-            <img srcset="./img/E-commerce.png 2x" alt="logo" />
-          </a>
+  <script src="https://kit.fontawesome.com/95179267e8.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <div class="container header-box">
+      <div class="header-top">
+        <a href="#!" class="header-logo">
+          <img src="./img/E-commerce.png" alt="logo">
+        </a>
+        <div class="header-input">
+          <form class="box-input">
+            <a href="#!" class="btn btn-categories">
+              <span>All categories</span>
+            </a>
+
+            <input type="text" placeholder="Search anything">
+            <a href="#!" class="icon icon-search">
+              <img src="./img/Search_alt_duotone_line.svg" alt="search">
+            </a>
+          </form>
+        </div>
+        <div class="header-action">
+          <a href="#!" class="btn btn--help">Help</a>
+
+          <div class="box-account box-action">
+            <img src="./img/User.svg" alt="user-icon" class="icon">
+            <a href="#!" class="icon-text">Account</a>
+          </div>
+          <div class="box-bag box-action">
+            <img src="./img/Bag_alt.svg" alt="user-icon " class="icon">
+            <a href="#!" class="icon-text">Shopping</a>
+            <div class="count">10</div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <nav class="nav">
+          <input type="checkbox" id="nav-checkbox" hidden>
+          <label class="btn btn-toggle" for="nav-checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <label class="btn-toggle-x" for="nav-checkbox">
+            <span></span>
+            <span></span>
+          </label>
+          <div class="bg-menu"></div>
           <div class="header-input">
-            <div class="box-input">
+            <form class="box-input">
               <div class="btn btn-categories">
                 <span>All categories</span>
               </div>
 
-              <input type="text" placeholder="Search anything" />
-              <div class="icon icon-search">
-                <img src="./img/Search_alt_duotone_line.svg" alt="search" />
-              </div>
+              <input type="text" placeholder="Search anything">
+              <a href="#!" class="icon icon-search">
+                <img src="./img/Search_alt_duotone_line.svg" alt="search">
+              </a>
+            </form>
+          </div>
+          <ul class="header-menu">
+            <li class="header--item">
+              <a href="#!" class="header--link">Jewelry & Accessories </a>
+            </li>
+            <li class="header--item">
+              <a href="#!" class="header--link">Clothing & Shoes</a>
+            </li>
+            <li class="header--item">
+              <a href="#!" class="header--link">Home & Living</a>
+            </li>
+            <li class="header--item">
+              <a href="#!" class="header--link">Wedding & Party</a>
+            </li>
+            <li class="header--item">
+              <a href="#!" class="header--link">Toys & Entertainment </a>
+            </li>
+            <li class="header--item">
+              <a href="#!" class="header--link">Art & Collectibles</a>
+            </li>
+            <li class="header--item">
+              <a href="#!" class="header--link">Craft Supplies & Tools</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- =====================header===================== -->
+  <main>
+    <!-- ===========overlay-card======= -->
+    <div class="card-collection">
+      <!-- <div class="bg"></div> -->
+      <div class="container">
+        <div class="box-card-collection">
+          <div class="card-text">
+            <div class="card-collection__media">
+              <img src="img/unsplash_mO-_iF_FkCk.png" alt="card-text">
+            </div>
+            <div class="card-collection__content">
+              <a href="#!">Clothing & Shoes</a>
             </div>
           </div>
-          <div class="header-action">
-            <div class="btn btn--help">Help</div>
-
-            <div class="box-account box-action">
-              <img src="./img/User.svg" alt="user-icon" class="icon" />
-              <span class="icon-text">Account</span>
+          <div class="card-text">
+            <div class="card-collection__media">
+              <img src="./img/unsplash_gDrUY7QUeng.png" alt="card-text">
             </div>
-            <div class="box-bag box-action">
-              <img src="./img/Bag_alt.svg" alt="user-icon " class="icon" />
-              <span class="icon-text">Shopping</span>
-              <div class="count">10</div>
+            <div class="card-collection__content">
+              <a href="#!">Home & Living</a>
             </div>
           </div>
-        </div>
-        <div class="header-bottom">
-          <nav class="nav">
-            <input type="checkbox" id="nav-checkbox" hidden />
-            <label class="btn btn-toggle" for="nav-checkbox">
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
-            <label class="btn-toggle-x" for="nav-checkbox">
-              <span></span>
-              <span></span>
-            </label>
-            <div class="bg-menu"></div>
-            <div class="header-input">
-              <div class="box-input">
-                <div class="btn btn-categories">
-                  <span>All categories</span>
-                </div>
-
-                <input type="text" placeholder="Search anything" />
-                <div class="icon icon-search">
-                  <img src="./img/Search_alt_duotone_line.svg" alt="search" />
-                </div>
-              </div>
+          <div class="card-text">
+            <div class="card-collection__media">
+              <img src="./img/unsplash_q4LIvI9NN6Y.png" alt="card-text">
             </div>
-            <ul class="header-menu">
-              <li class="header--item">
-                <a href="#!" class="header--link">Jewelry & Accessories </a>
-              </li>
-              <li class="header--item">
-                <a href="#!" class="header--link">Clothing & Shoes</a>
-              </li>
-              <li class="header--item">
-                <a href="#!" class="header--link">Home & Living</a>
-              </li>
-              <li class="header--item">
-                <a href="#!" class="header--link">Wedding & Party</a>
-              </li>
-              <li class="header--item">
-                <a href="#!" class="header--link">Toys & Entertainment </a>
-              </li>
-              <li class="header--item">
-                <a href="#!" class="header--link">Art & Collectibles</a>
-              </li>
-              <li class="header--item">
-                <a href="#!" class="header--link">Craft Supplies & Tools</a>
-              </li>
-            </ul>
-          </nav>
+            <div class="card-collection__content">
+              <a href="#!">Art & Collectibles</a>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- =====================header===================== -->
-    <main>
-      <!-- ===========overlay-card======= -->
-      <section class="card-collection">
-        <div class="bg"></div>
-        <div class="container">
-          <div class="box-card-collection">
-            <div class="card-text">
-              <div class="card-collection__media">
-                <img srcset="img/unsplash_mO-_iF_FkCk.png 2x" alt="card-text" />
-              </div>
-              <div class="card-collection__content">
-                <p>Home & Living</p>
-              </div>
+    </div>
+
+    <!-- ===============product list=============== -->
+    <div class="product-list">
+      <div class="container">
+        <div class="box-card scroll-container">
+          <div class="card-item card-product scroll-item">
+            <div class="card-media">
+              <a href="#!" class="icon-favorite">
+                <img src="./img/Favorite.svg" alt="favorite">
+              </a>
+              <img src="./img/Rectangle19.png" alt="card-product">
             </div>
-            <div class="card-text">
-              <div class="card-collection__media">
-                <img
-                  srcset="./img/unsplash_gDrUY7QUeng.png 2x"
-                  alt="card-text"
-                />
+            <div class="card-content">
+              <div class="box-color">
+                <span>color</span>
+                <ul class="color-list">
+                  <li class="color-item green-snake"></li>
+                  <li class="color-item ball-blue"></li>
+                  <li class="color-item carib-green"></li>
+                  <li class="color-item ultra-green"></li>
+                  <li class="color-item pale-orange"></li>
+                  <li class="color-item ultra-green"></li>
+                  <li class="color-item purple"></li>
+                </ul>
               </div>
-              <div class="card-collection__content">
-                <p>Home & Living</p>
-              </div>
-            </div>
-            <div class="card-text">
-              <div class="card-collection__media">
-                <img
-                  srcset="./img/unsplash_q4LIvI9NN6Y.png 2x"
-                  alt="card-text"
-                />
-              </div>
-              <div class="card-collection__content">
-                <p>Home & Living</p>
-              </div>
+              <a href="#!" class="card-title">Vonna Neva Walnut Sandalye Chair</a>
+              <span class="card-price">195,13 $</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- ===============product list=============== -->
-      <section class="product-list">
-        <div class="container">
-          <div class="box-card scroll-container">
-            <div class="card-item card-product scroll-item">
-              <div class="card-media">
-                <img srcset="./img/Rectangle19.png 2x" alt="card-product" />
-              </div>
-              <div class="card-content">
-                <div class="box-color">
-                  <span>color</span>
-                  <ul class="color-list">
-                    <li class="color-item green-snake"></li>
-                    <li class="color-item ball-blue"></li>
-                    <li class="color-item carib-green"></li>
-                    <li class="color-item ultra-green"></li>
-                    <li class="color-item pale-orange"></li>
-                    <li class="color-item ultra-green"></li>
-                    <li class="color-item purple"></li>
-                  </ul>
-                </div>
-                <p class="card-title">Vonna Neva Walnut Sandalye Chair</p>
-                <span class="card-price">195,13 $</span>
-              </div>
-              <div class="icon-favorite">
-                <img src="./img/Favorite.svg" alt="favorite" />
-              </div>
+          <div class="card-item card-product scroll-item">
+            <div class="card-media">
+              <a href="#!" class="icon-favorite">
+                <img src="./img/Favorite.svg" alt="favorite">
+              </a>
+              <img src="./img/Rectangle192.png" alt="card-product">
             </div>
-            <div class="card-item card-product scroll-item">
-              <div class="card-media">
-                <img srcset="./img/Rectangle192.png 2x" alt="card-product" />
+            <div class="card-content">
+              <div class="box-color">
+                <span>color</span>
+                <ul class="color-list">
+                  <li class="color-item carib-green"></li>
+                  <li class="color-item ultra-green"></li>
+                  <li class="color-item watermelon"></li>
+                  <li class="color-item pale-orange"></li>
+                  <li class="color-item purple"></li>
+                </ul>
               </div>
-              <div class="card-content">
-                <div class="box-color">
-                  <span>color</span>
-                  <ul class="color-list">
-                    <li class="color-item carib-green"></li>
-                    <li class="color-item ultra-green"></li>
-                    <li class="color-item watermelon"></li>
-                    <li class="color-item pale-orange"></li>
-                    <li class="color-item purple"></li>
-                  </ul>
-                </div>
-                <p class="card-title">
-                  Wood lamp, Floor Lamp, Lambader, Decorative
-                </p>
-                <span class="card-price">458,43 $</span>
-              </div>
-              <div class="icon-favorite">
-                <img src="./img/Favorite.svg" alt="favorite" />
-              </div>
+              <a href="#!" class="card-title">
+                Wood lamp, Floor Lamp, Lambader, Decorative
+              </a>
+              <span class="card-price">458,43 $</span>
             </div>
-            <div class="card-item card-product scroll-item">
-              <div class="card-media">
-                <img srcset="./img/Rectangle193.png 2x" alt="card-product" />
-              </div>
-              <div class="card-content">
-                <div class="box-color">
-                  <span>color</span>
-                  <ul class="color-list">
-                    <li class="color-item carib-green"></li>
-                    <li class="color-item watermelon"></li>
-                    <li class="color-item ball-blue"></li>
-                  </ul>
-                </div>
-                <p class="card-title">
-                  NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
-                </p>
-                <span class="card-price">789,67 $</span>
-              </div>
-              <div class="icon-favorite">
-                <img src="./img/Favorite.svg" alt="favorite" />
-              </div>
+          </div>
+          <div class="card-item card-product scroll-item">
+            <div class="card-media">
+              <a href="#!" class="icon-favorite">
+                <img src="./img/Favorite.svg" alt="favorite">
+              </a>
+              <img src="./img/Rectangle193.png" alt="card-product">
             </div>
-            <div class="card-item card-product scroll-item">
-              <div class="card-media">
-                <img srcset="./img/Rectangle19.png 2x" alt="card-product" />
+            <div class="card-content">
+              <div class="box-color">
+                <span>color</span>
+                <ul class="color-list">
+                  <li class="color-item carib-green"></li>
+                  <li class="color-item watermelon"></li>
+                  <li class="color-item ball-blue"></li>
+                </ul>
               </div>
-              <div class="card-content">
-                <div class="box-color">
-                  <span>color</span>
-                  <ul class="color-list">
-                    <li class="color-item ball-blue"></li>
-                    <li class="color-item watermelon"></li>
-                    <li class="color-item ball-blue"></li>
-                    <li class="color-item purple"></li>
-                    <li class="color-item pale-orange"></li>
-                  </ul>
-                </div>
-                <p class="card-title">
-                  Lace Punch Needle Pillow Covers with invisible zipper, 16*16
-                  inches
-                </p>
-                <span class="card-price">43,23 $</span>
-              </div>
-              <div class="icon-favorite">
-                <img src="./img/Favorite.svg" alt="favorite" />
-              </div>
+              <a href="#!" class="card-title">
+                NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
+              </a>
+              <span class="card-price">789,67 $</span>
             </div>
-            <div class="box-dot">
-              <!-- <div class="dot"></div>
+          </div>
+          <div class="card-item card-product scroll-item">
+            <div class="card-media">
+              <a href="#!" class="icon-favorite">
+                <img src="./img/Favorite.svg" alt="favorite">
+              </a>
+              <img src="./img/Rectangle19.png" alt="card-product">
+            </div>
+            <div class="card-content">
+              <div class="box-color">
+                <span>color</span>
+                <ul class="color-list">
+                  <li class="color-item ball-blue"></li>
+                  <li class="color-item watermelon"></li>
+                  <li class="color-item ball-blue"></li>
+                  <li class="color-item purple"></li>
+                  <li class="color-item pale-orange"></li>
+                </ul>
+              </div>
+              <a href="#!" class="card-title">
+                Lace Punch Needle Pillow Covers with invisible zipper, 16*16
+                inches
+              </a>
+              <span class="card-price">43,23 $</span>
+            </div>
+            <div class="icon-favorite">
+              <img src="./img/Favorite.svg" alt="favorite">
+            </div>
+          </div>
+          <div class="box-dot">
+            <!-- <div class="dot"></div>
               <div class="dot active"></div>
               <div class="dot"></div>
               <div class="dot"></div> -->
-            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <!-- ============rich-text============= -->
-      <section class="rich-text">
-        <div class="container">
-          <div class="rich-text-box">
-            <div class="text-card">
-              <div class="text-card-content">
-                <h4 class="text-title">A community doing good</h4>
-                <p class="text-desc">
-                  Commerce is a global online marketplace, where people.
-                </p>
-              </div>
-              <div class="text-card-media">
-                <img srcset="./img/1.png 2x" alt="text-rich" />
-              </div>
-            </div>
-            <div class="text-card">
-              <div class="text-card-content">
-                <h4 class="text-title">Support independent creators</h4>
-                <p class="text-desc">
-                  Just millions of people selling the things they love.
-                </p>
-              </div>
-              <div class="text-card-media">
-                <img srcset="./img/2.png 2x" alt="text-rich" />
-              </div>
-            </div>
-            <div class="text-card">
-              <div class="text-card-content">
-                <h4 class="text-title break-word">Peace of mind</h4>
-                <p class="text-desc">
-                  Privacy is the highest priority of our dedicated team.
-                </p>
-              </div>
-              <div class="text-card-media">
-                <img srcset="./img/3.png 2x" alt="text-rich" />
-              </div>
-            </div>
-            <div class="box-dot">
-              <!-- <div class="dot"></div>
-              <div class="dot active"></div>
-              <div class="dot"></div> -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============items-slider========= -->
-      <section class="items-slider card-carousel">
-        <div class="container">
-          <div class="row card-carousel-container">
-            <div class="card-carousel-title">
-              <h3 class="h3-title">
-                Find things you'll love. Support independent sellers.
-              </h3>
-              <span class="sub-tittle"> Only on polka. </span>
-            </div>
-
-            <div class="card-carousel-box">
-              <div class="btn-carousel btn-prev">
-                <img src="./img/iconprev.svg" alt="icon" />
-              </div>
-              <ul class="slider-carousel">
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle1.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Craft Kits</span>
-                  </div>
-                </li>
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle2.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Throw Pillows</span>
-                  </div>
-                </li>
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle29.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Natural Glass</span>
-                  </div>
-                </li>
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle4.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Self-care</span>
-                  </div>
-                </li>
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle5.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Gift Ideas</span>
-                  </div>
-                </li>
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle6.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Wall Decor</span>
-                  </div>
-                </li>
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle7.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Wedding</span>
-                  </div>
-                </li>
-                <li class="slider-item">
-                  <div class="slider-media">
-                    <img srcset="./img/Rectangle8.png 2x" alt="slider-card" />
-                  </div>
-                  <div class="slider-content">
-                    <span class="name-card">Life Style</span>
-                  </div>
-                </li>
-                <div class="box-dot">
-                  <!-- <div class="dot"></div>
-                  <div class="dot active"></div>
-                  <div class="dot"></div> -->
-                </div>
-              </ul>
-              <div class="btn-carousel btn-next">
-                <img src="./img/nexticon.svg" alt="icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============picked-item========= -->
-      <section class="picked-item">
-        <div class="container">
-          <div class="row">
-            <div class="box-heading">
-              <h3 class="h3-title">Discover unique hand-picked items</h3>
-              <span class="btn-view-all">view all &rarr;</span>
-            </div>
-            <div class="box-card-item">
-              <div class="btn-carousel btn-prev">
-                <img src="./img/iconprev.svg" alt="icon" />
-              </div>
-              <ul class="pick-item-list">
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle47.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Distressed Tote Leather Bag Leather Bag
-                    </p>
-                    <span class="card-price">216,27 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle49.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Womens Cognac Leather Elastic Straps
-                    </p>
-                    <span class="card-price">195,13 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle51.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Distressed Tote Leather Bag Leather Bag
-                    </p>
-                    <span class="card-price">910,76 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle53.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">High Top Canvas Shoes</p>
-                    <span class="card-price">341,02 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle55.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Rose Gold Moissanite Vintage Wedding Ring Set
-                    </p>
-                    <span class="card-price">3.344,13 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle57.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Blue Topaz Bangle 24K Gold Plated Handmade
-                    </p>
-                    <span class="card-price">789,09 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="box-dot">
-                  <!-- <div class="dot"></div>
-                  <div class="dot active"></div>
-                  <div class="dot"></div> -->
-                </li>
-              </ul>
-              <div class="btn-carousel btn-next">
-                <img src="./img/nexticon.svg" alt="icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============tab-show========= -->
-      <section class="tab-show">
-        <div class="container">
-          <div class="box-tab-show">
-            <div class="box-menu">
-              <ul class="tab-show-menu">
-                <li class="tab-show-item">
-                  <a href="#!" class="tab-show-link"
-                    >Modern <br />
-                    Farmhouse</a
-                  >
-                </li>
-                <li class="tab-show-item">
-                  <a href="#!" class="tab-show-link"
-                    >Eclectic <br />
-                    Decor</a
-                  >
-                </li>
-                <li class="tab-show-item">
-                  <a href="#!" class="tab-show-link"
-                    >Polka Boho <br />
-                    Decor</a
-                  >
-                </li>
-                <li class="tab-show-item">
-                  <a href="#!" class="tab-show-link"
-                    >Minimalist <br />
-                    Style</a
-                  >
-                </li>
-                <li class="tab-show-item">
-                  <a href="#!" class="tab-show-link"
-                    >Anniversary <br />
-                    Gift</a
-                  >
-                </li>
-                <li class="tab-show-item">
-                  <a href="#!" class="tab-show-link">Wedding <br />Gifts</a>
-                </li>
-              </ul>
-            </div>
-            <div class="box-card scroll-container">
-              <div class="card-item card-product scroll-item first-card">
-                <img
-                  srcset="./img/unsplash_M7cQqGjBNm8.png 2x"
-                  alt="card-product"
-                />
-              </div>
-              <div class="card-item card-product scroll-item">
-                <div class="card-media">
-                  <img srcset="./img/100.png 2x" alt="card-product" />
-                </div>
-                <div class="card-content">
-                  <div class="box-color">
-                    <span>color</span>
-                    <ul class="color-list">
-                      <li class="color-item pale-orange"></li>
-                      <li class="color-item ultra-green"></li>
-                      <li class="color-item watermelon"></li>
-                    </ul>
-                  </div>
-                  <p class="card-title">
-                    Wood lamp, Floor Lamp, Lambader, Decorative
-                  </p>
-                  <span class="card-price">458,43 $</span>
-                </div>
-                <div class="icon-favorite">
-                  <img src="./img/Favorite.svg" alt="favorite" />
-                </div>
-              </div>
-              <div class="card-item card-product scroll-item">
-                <div class="card-media">
-                  <img srcset="./img/101.png 2x" alt="card-product" />
-                </div>
-                <div class="card-content">
-                  <div class="box-color">
-                    <span>color</span>
-                    <ul class="color-list">
-                      <li class="color-item pale-orange"></li>
-                      <li class="color-item"></li>
-                      <li class="color-item purple"></li>
-                      <li class="color-item carib-green"></li>
-                    </ul>
-                  </div>
-                  <p class="card-title">
-                    NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
-                  </p>
-                  <span class="card-price">789,67 $</span>
-                </div>
-                <div class="icon-favorite">
-                  <img src="./img/Favorite.svg" alt="favorite" />
-                </div>
-              </div>
-              <div class="card-item card-product scroll-item">
-                <div class="card-media">
-                  <img srcset="./img/102.png 2x" alt="card-product" />
-                </div>
-                <div class="card-content">
-                  <div class="box-color">
-                    <span>color</span>
-                    <ul class="color-list">
-                      <li class="color-item watermelon"></li>
-                      <li class="color-item green-snake"></li>
-                      <li class="color-item ultra-green"></li>
-                      <li class="color-item ball-blue"></li>
-                      <li class="color-item purple"></li>
-                    </ul>
-                  </div>
-                  <p class="card-title">
-                    Lace Punch Needle Pillow Covers with invisible zipper, 16*16
-                    inches
-                  </p>
-                  <span class="card-price">43,23 $</span>
-                </div>
-                <div class="icon-favorite">
-                  <img src="./img/Favorite.svg" alt="favorite" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--=============item-carousel==============  -->
-      <section class="item-carousel">
-        <div class="container">
-          <div class="box-item-carousel">
-            <div class="box-card-item">
-              <ul class="pick-item-list">
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle47.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Distressed Tote Leather Bag Leather Bag
-                    </p>
-                    <span class="card-price">216,27 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle49.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Womens Cognac Leather Elastic Straps
-                    </p>
-                    <span class="card-price">195,13 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle51.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Distressed Tote Leather Bag Leather Bag
-                    </p>
-                    <span class="card-price">910,76 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle53.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">High Top Canvas Shoes</p>
-                    <span class="card-price">341,02 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle55.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Rose Gold Moissanite Vintage Wedding Ring Set
-                    </p>
-                    <span class="card-price">3.344,13 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="card-item card-product picked-item-card">
-                  <div class="card-media">
-                    <img srcset="./img/Rectangle57.png 2x" alt="card-product" />
-                  </div>
-                  <div class="card-content">
-                    <p class="card-title">
-                      Blue Topaz Bangle 24K Gold Plated Handmade
-                    </p>
-                    <span class="card-price">789,09 $</span>
-                  </div>
-                  <div class="icon-favorite">
-                    <img src="./img/Favorite.svg" alt="favorite" />
-                  </div>
-                </li>
-                <li class="box-dot">
-                  <!-- <div class="dot"></div>
-                  <div class="dot active"></div>
-                  <div class="dot"></div> -->
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--=====================register========== -->
-      <section class="register">
-        <div class="container">
-          <div class="box-register">
-            <div class="register-content">
-              <h3 class="yes">Yes!</h3>
-              <p class="paragraph">
-                Send me exclusive offers, unique gift ideas, and personalized
-                tips for shopping and selling on Commerce.
+    <!-- ============rich-text============= -->
+    <div class="rich-text">
+      <div class="container">
+        <div class="rich-text-box">
+          <div class="text-card">
+            <div class="text-card-content">
+              <h4 class="text-title">A community doing good</h4>
+              <p class="text-desc">
+                Commerce is a global online marketplace, where people.
               </p>
             </div>
-            <div class="register-input">
-              <input type="text" placeholder="Drop your email" />
-              <div class="btn-register">Subscribe &rarr;</div>
+            <div class="text-card-media">
+              <img src="./img/1.png" alt="text-rich">
             </div>
-            <div class="you-ready">
-              <a href="#!">First order only. You’re ready? </a>
+          </div>
+          <div class="text-card">
+            <div class="text-card-content">
+              <h4 class="text-title">Support independent creators</h4>
+              <p class="text-desc">
+                Just millions of people selling the things they love.
+              </p>
+            </div>
+            <div class="text-card-media">
+              <img src="./img/2.png" alt="text-rich">
+            </div>
+          </div>
+          <div class="text-card">
+            <div class="text-card-content">
+              <h4 class="text-title break-word">Peace of mind</h4>
+              <p class="text-desc">
+                Privacy is the highest priority of our dedicated team.
+              </p>
+            </div>
+            <div class="text-card-media">
+              <img src="./img/3.png" alt="text-rich">
+            </div>
+          </div>
+          <div class="box-dot">
+            <!-- <div class="dot"></div>
+              <div class="dot active"></div>
+              <div class="dot"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============items-slider========= -->
+    <div class="items-slider card-carousel">
+      <div class="container">
+        <div class="row card-carousel-container">
+          <div class="card-carousel-title">
+            <h3 class="h3-title">
+              Find things you'll love. Support independent sellers.
+            </h3>
+            <span class="sub-tittle"> Only on polka. </span>
+          </div>
+
+          <div class="card-carousel-box">
+            <div class="btn-carousel btn-prev">
+              <img src="./img/iconprev.svg" alt="icon">
+            </div>
+            <ul class="slider-carousel">
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle1.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Craft Kits</a>
+                </div>
+              </li>
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle2.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Throw Pillows</a>
+                </div>
+              </li>
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle29.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Natural Glass</a>
+                </div>
+              </li>
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle4.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Self-care</a>
+                </div>
+              </li>
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle5.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Gift Ideas</a>
+                </div>
+              </li>
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle6.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Wall Decor</a>
+                </div>
+              </li>
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle7.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Wedding</a>
+                </div>
+              </li>
+              <li class="slider-item">
+                <div class="slider-media">
+                  <img src="./img/Rectangle8.png" alt="slider-card">
+                </div>
+                <div class="slider-content">
+                  <a href="#!" class="name-card">Life Style</a>
+                </div>
+              </li>
+              <li class="box-dot">
+                <!-- <div class="dot"></div>
+                  <div class="dot active"></div>
+                  <div class="dot"></div> -->
+              </li>
+            </ul>
+            <div class="btn-carousel btn-next">
+              <img src="./img/nexticon.svg" alt="icon">
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <section class="footer">
-      <div class="footer-top">
-        <p class="footer-top-text">
-          Commerce, is powered <span></span> by 100% renewable electricity.
-        </p>
       </div>
+    </div>
+
+    <!-- ============picked-item========= -->
+    <div class="picked-item">
       <div class="container">
-        <div class="footer-mid">
-          <div class="footer-left">
-            <a href="#!" class="logo">
-              <img src="./img/E-commerce.svg" alt="logo" />
-            </a>
-            <div class="footer-location">
-              <p>Cricklewood,London NW2 6qg, Uk</p>
+        <div class="row">
+          <div class="box-heading">
+            <h3 class="h3-title">Discover unique hand-picked items</h3>
+            <span class="btn-view-all">view all &rarr;</span>
+          </div>
+          <div class="box-card-item">
+            <div class="btn-carousel btn-prev">
+              <img src="./img/iconprev.svg" alt="icon">
             </div>
-
-            <div class="footer-social">
-              <a href="#!" class="box-icon">
-                <img src="./img/facebook.svg" alt="facebook" />
-              </a>
-
-              <a href="#!" class="box-icon">
-                <img src="./img/twitter.svg" alt="facebook" />
-              </a>
-              <a href="#!" class="box-icon">
-                <img src="./img/linkedin.svg" alt="facebook" />
-              </a>
-              <a href="#!" class="box-icon">
-                <img src="./img/dribbble.svg" alt="facebook" />
-              </a>
+            <ul class="pick-item-list">
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle47.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Distressed Tote Leather Bag Leather Bag
+                  </a>
+                  <span class="card-price">216,27 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle49.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Womens Cognac Leather Elastic Straps
+                  </a>
+                  <span class="card-price">195,13 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle51.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Distressed Tote Leather Bag Leather Bag
+                  </a>
+                  <span class="card-price">910,76 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle53.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">High Top Canvas Shoes</a>
+                  <span class="card-price">341,02 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle55.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Rose Gold Moissanite Vintage Wedding Ring Set
+                  </a>
+                  <span class="card-price">3.344,13 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle57.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Blue Topaz Bangle 24K Gold Plated Handmade
+                  </a>
+                  <span class="card-price">789,09 $</span>
+                </div>
+              </li>
+              <li class="box-dot">
+                <!-- <div class="dot"></div>
+                  <div class="dot active"></div>
+                  <div class="dot"></div> -->
+              </li>
+            </ul>
+            <div class="btn-carousel btn-next">
+              <img src="./img/nexticon.svg" alt="icon">
             </div>
           </div>
-          <ul class="footer-menu footer-right">
-            <li class="footer-item">
-              <input type="checkbox" id="input-sub-menu1" hidden />
-              <label for="input-sub-menu1" class="footer-title">
-                <h4>Shop</h4>
-              </label>
+        </div>
+      </div>
+    </div>
 
-              <ul class="footer-sub-menu">
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Gift cards</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Site map</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Polka blog</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Login</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Sign in</a>
-                </li>
-              </ul>
+    <!-- ============tab-show========= -->
+    <div class="tab-show">
+      <div class="container">
+        <div class="box-tab-show">
+          <div class="box-menu">
+            <ul class="tab-show-menu">
+              <li class="tab-show-item">
+                <a href="#!" class="tab-show-link">Modern <br>
+                  Farmhouse</a>
+              </li>
+              <li class="tab-show-item">
+                <a href="#!" class="tab-show-link">Eclectic <br>
+                  Decor</a>
+              </li>
+              <li class="tab-show-item">
+                <a href="#!" class="tab-show-link">Polka Boho <br>
+                  Decor</a>
+              </li>
+              <li class="tab-show-item">
+                <a href="#!" class="tab-show-link">Minimalist <br>
+                  Style</a>
+              </li>
+              <li class="tab-show-item">
+                <a href="#!" class="tab-show-link">Anniversary <br>
+                  Gift</a>
+              </li>
+              <li class="tab-show-item">
+                <a href="#!" class="tab-show-link">Wedding <br>Gifts</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="box-card scroll-container">
+            <li class="card-item card-product scroll-item first-card">
+              <img src="./img/unsplash_M7cQqGjBNm8.png" alt="card-product">
             </li>
-            <li class="footer-item">
-              <input type="checkbox" id="input-sub-menu2" hidden />
-              <label for="input-sub-menu2" class="footer-title">
-                <h4>Sell</h4>
-              </label>
-              <ul class="footer-sub-menu">
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Sell on Polka</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Teams</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Forums</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Affiliates</a>
-                </li>
-              </ul>
+            <li class="card-item card-product scroll-item">
+              <div class="card-media">
+                <img src="./img/100.png" alt="card-product">
+              </div>
+              <div class="card-content">
+                <div class="box-color">
+                  <span>color</span>
+                  <ul class="color-list">
+                    <li class="color-item pale-orange"></li>
+                    <li class="color-item ultra-green"></li>
+                    <li class="color-item watermelon"></li>
+                  </ul>
+                </div>
+                <a href="#!" class="card-title">
+                  Wood lamp, Floor Lamp, Lambader, Decorative
+                </a>
+                <span class="card-price">458,43 $</span>
+              </div>
+              <div class="icon-favorite">
+                <img src="./img/Favorite.svg" alt="favorite">
+              </div>
             </li>
-            <li class="footer-item">
-              <input type="checkbox" id="input-sub-menu3" hidden />
-              <label for="input-sub-menu3" class="footer-title">
-                <h4>About</h4>
-              </label>
-              <ul class="footer-sub-menu">
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Polka, Inc.</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Policies</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Investors</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Careers</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Press</a>
-                </li>
-              </ul>
+            <li class="card-item card-product scroll-item">
+              <div class="card-media">
+                <img src="./img/101.png" alt="card-product">
+              </div>
+              <div class="card-content">
+                <div class="box-color">
+                  <span>color</span>
+                  <ul class="color-list">
+                    <li class="color-item pale-orange"></li>
+                    <li class="color-item"></li>
+                    <li class="color-item purple"></li>
+                    <li class="color-item carib-green"></li>
+                  </ul>
+                </div>
+                <a href="#!" class="card-title">
+                  NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple
+                </a>
+                <span class="card-price">789,67 $</span>
+              </div>
+              <div class="icon-favorite">
+                <img src="./img/Favorite.svg" alt="favorite">
+              </div>
             </li>
-            <li class="footer-item">
-              <input type="checkbox" id="input-sub-menu4" hidden />
-              <label for="input-sub-menu4" class="footer-title">
-                <h4>Help</h4>
-              </label>
-              <ul class="footer-sub-menu">
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Help Center</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Trust and safety</a>
-                </li>
-                <li class="sub-menu-item">
-                  <a href="" class="sub-menu-link">Privacy settings</a>
-                </li>
-              </ul>
+            <li class="card-item card-product scroll-item">
+              <div class="card-media">
+                <img src="./img/102.png" alt="card-product">
+              </div>
+              <div class="card-content">
+                <div class="box-color">
+                  <span>color</span>
+                  <ul class="color-list">
+                    <li class="color-item watermelon"></li>
+                    <li class="color-item green-snake"></li>
+                    <li class="color-item ultra-green"></li>
+                    <li class="color-item ball-blue"></li>
+                    <li class="color-item purple"></li>
+                  </ul>
+                </div>
+                <a href="#!" class="card-title">
+                  Lace Punch Needle Pillow Covers with invisible zipper, 16*16
+                  inches
+                </a>
+                <span class="card-price">43,23 $</span>
+              </div>
+              <div class="icon-favorite">
+                <img src="./img/Favorite.svg" alt="favorite">
+              </div>
             </li>
           </ul>
         </div>
-        <div class="footer-bottom">
-          <p class="inc">© 2022 Commerce, Inc.</p>
-          <div class="center">
-            <p class="center-text">Privacy policy</p>
-            <p class="center-text">Terms of use</p>
-            <p class="center-text">Cookies</p>
+      </div>
+    </div>
+    <!--=============item-carousel==============  -->
+    <div class="item-carousel">
+      <div class="container">
+        <div class="box-item-carousel">
+          <div class="box-card-item">
+            <ul class="pick-item-list">
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle47.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Distressed Tote Leather Bag Leather Bag
+                  </a>
+                  <span class="card-price">216,27 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle49.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Womens Cognac Leather Elastic Straps
+                  </a>
+                  <span class="card-price">195,13 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle51.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Distressed Tote Leather Bag Leather Bag
+                  </a>
+                  <span class="card-price">910,76 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle53.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">High Top Canvas Shoes</a>
+                  <span class="card-price">341,02 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle55.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Rose Gold Moissanite Vintage Wedding Ring Set
+                  </a>
+                  <span class="card-price">3.344,13 $</span>
+                </div>
+              </li>
+              <li class="card-item card-product picked-item-card">
+                <div class="card-media">
+                  <a href="#!" class="icon-favorite">
+                    <img src="./img/Favorite.svg" alt="favorite">
+                  </a>
+                  <img src="./img/Rectangle57.png" alt="card-product">
+                </div>
+                <div class="card-content">
+                  <a href="#!" class="card-title">
+                    Blue Topaz Bangle 24K Gold Plated Handmade
+                  </a>
+                  <span class="card-price">789,09 $</span>
+                </div>
+              </li>
+              <li class="box-dot">
+                <!-- <div class="dot"></div>
+                  <div class="dot active"></div>
+                  <div class="dot"></div> -->
+              </li>
+            </ul>
           </div>
-          <div class="btn-to-top">Scroll to top</div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <script src="./app.js"></script>
-  </body>
+    <!--=====================register========== -->
+    <div class="register">
+      <div class="container">
+        <div class="box-register">
+          <div class="register-content">
+            <h3 class="yes">Yes!</h3>
+            <p class="paragraph">
+              Send me exclusive offers, unique gift ideas, and personalized
+              tips for shopping and selling on Commerce.
+            </p>
+          </div>
+          <form class="register-input">
+            <input type="text" placeholder="Drop your email">
+            <button type="submit" class="btn-register">
+              Subscribe &rarr;
+            </button>
+          </form>
+          <div class="you-ready">
+            <a href="#!">First order only. You’re ready? </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    <div class="footer-top">
+      <p class="footer-top-text">
+        Commerce, is powered <span class="br"></span> by 100% renewable
+        electricity.
+      </p>
+    </div>
+    <div class="container">
+      <div class="footer-mid">
+        <div class="footer-left">
+          <a href="#!" class="logo">
+            <img src="./img/E-commerce.svg" alt="logo">
+          </a>
+          <div class="footer-location">
+            <p>Cricklewood,London NW2 6qg, Uk</p>
+          </div>
+
+          <div class="footer-social">
+            <a href="#!" class="box-icon">
+              <img src="./img/facebook.svg" alt="facebook">
+            </a>
+
+            <a href="#!" class="box-icon">
+              <img src="./img/twitter.svg" alt="facebook">
+            </a>
+            <a href="#!" class="box-icon">
+              <img src="./img/linkedin.svg" alt="facebook">
+            </a>
+            <a href="#!" class="box-icon">
+              <img src="./img/dribbble.svg" alt="facebook">
+            </a>
+          </div>
+        </div>
+        <ul class="footer-menu footer-right">
+          <li class="footer-item">
+            <input type="checkbox" id="input-sub-menu1" hidden>
+            <label for="input-sub-menu1" class="footer-title">
+              <span>Shop</span>
+              <span class="expend-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </label>
+
+            <ul class="footer-sub-menu">
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Gift cards</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Site map</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Polka blog</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Login</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Sign in</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <input type="checkbox" id="input-sub-menu2" hidden>
+            <label for="input-sub-menu2" class="footer-title">
+              <span>Sell</span>
+              <span class="expend-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </label>
+            <ul class="footer-sub-menu">
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Sell on Polka</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Teams</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Forums</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Affiliates</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <input type="checkbox" id="input-sub-menu3" hidden>
+            <label for="input-sub-menu3" class="footer-title">
+              <span>About</span>
+              <span class="expend-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </label>
+            <ul class="footer-sub-menu">
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Polka, Inc.</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Policies</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Investors</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Careers</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Press</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer-item">
+            <input type="checkbox" id="input-sub-menu4" hidden>
+            <label for="input-sub-menu4" class="footer-title">
+              <span>Help</span>
+              <span class="expend-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </label>
+            <ul class="footer-sub-menu">
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Help Center</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Trust and safety</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="" class="sub-menu-link">Privacy settings</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="inc">© 2022 Commerce, Inc.</p>
+        <div class="center">
+          <a href="#!" class="center-text">Privacy policy</a>
+          <a href="#!" class="center-text">Terms of use</a>
+          <a href="#!" class="center-text">Cookies</a>
+        </div>
+        <a href="#header" class="btn-to-top">
+          <span>Scroll to top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
 </html>

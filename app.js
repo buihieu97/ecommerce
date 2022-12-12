@@ -1,6 +1,5 @@
 const productContainer = document.querySelector(".product-list .box-card");
 const boxDots = Array.from(document.querySelectorAll(".box-dot"));
-
 boxDots.forEach((e, index) => {
   const sliderContainer = e.parentElement;
   sliderContainer.style.scrollBehavior = "smooth";
@@ -10,8 +9,8 @@ boxDots.forEach((e, index) => {
   const widthItem = sliderItems[0].clientWidth;
   const widthItemSlider = widthItem * sliderItems.length;
   const containerWidth = sliderContainer.clientWidth;
-  const countItemVisible = (containerWidth / widthItem).toFixed();
-  const countDot = widthItemSlider / countItemVisible / widthItem;
+  const countItemVisible = Math.round(containerWidth / widthItem);
+  const countDot = Math.ceil(widthItemSlider / countItemVisible / widthItem);
   new Array(countDot).fill(0).forEach((e, i) => {
     let dot = document.createElement("div");
     dot.classList = "dot";
@@ -39,5 +38,12 @@ boxDots.forEach((e, index) => {
       e.classList.remove("active");
     });
     dots[indexDotActive].classList = "dot active";
+    let b = e.target.scrollWidth - e.target.scrollLeft;
+    if (b <= e.target.clientWidth + widthItem) {
+      dots.forEach((e) => {
+        e.classList.remove("active");
+      });
+      dots[dots.length - 1].classList = "dot active";
+    }
   });
 });

@@ -36,8 +36,8 @@
   border-radius: 5px;
 }
 .tab-show .card-title {
-  font-size: 1.2rem;
-  line-height: var(16/12);
+  font-size: 1.4rem;
+  line-height: var(24/12);
 }
 @media screen and (max-width: 1024px) {
   .tab-show-menu {
@@ -83,5 +83,9 @@
   .box-tab-show .box-card {
     padding: 1.6rem;
     scroll-padding: 0 1.6rem;
+  }
+  .tab-show .card-title {
+    font-size: 1.2rem;
+    line-height: var(16/12);
   }
 }

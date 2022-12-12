@@ -51,7 +51,8 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 4.8rem;
 }
-.footer-title h4 {
+
+.footer-title span {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -95,15 +96,23 @@
 }
 .btn-to-top {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: #5f5f5f;
 }
+
 .center-text,
 .inc,
 .btn-to-top {
-  cursor: pointer;
   transition: all 0.3s;
 }
-.center-text:hover {
+.center-text:hover,
+.btn-to-top:hover {
   color: var(--color-main);
+}
+.expend-icon {
+  display: none;
 }
 @media screen and (max-width: 1024px) {
   .footer-left {
@@ -184,6 +193,11 @@
     border-radius: 99rem;
     max-height: 4.8rem;
   }
+  .footer-title span {
+    display: block;
+    font-size: 1.4rem;
+    line-height: calc(18 / 14);
+  }
   .footer-sub-menu {
     margin-left: 2.4rem;
   }
@@ -194,6 +208,18 @@
   .footer-top {
     margin-bottom: 2.7rem;
   }
+  .footer-title {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .expend-icon {
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    color: #5f5f5f;
+  }
+
   #input-sub-menu1:checked ~ .footer-sub-menu,
   #input-sub-menu2:checked ~ .footer-sub-menu,
   #input-sub-menu3:checked ~ .footer-sub-menu,
@@ -206,10 +232,16 @@
   #input-sub-menu4:checked ~ .footer-title {
     background: var(--color-third);
   }
-  #input-sub-menu1:checked ~ .footer-title h4,
-  #input-sub-menu2:checked ~ .footer-title h4,
-  #input-sub-menu3:checked ~ .footer-title h4,
-  #input-sub-menu4:checked ~ .footer-title h4 {
+  #input-sub-menu1:checked ~ .footer-title span,
+  #input-sub-menu2:checked ~ .footer-title span,
+  #input-sub-menu3:checked ~ .footer-title span,
+  #input-sub-menu4:checked ~ .footer-title span {
+    color: white;
+  }
+  #input-sub-menu1:checked ~ .footer-title .expend-icon,
+  #input-sub-menu2:checked ~ .footer-title .expend-icon,
+  #input-sub-menu3:checked ~ .footer-title .expend-icon,
+  #input-sub-menu4:checked ~ .footer-title .expend-icon {
     color: white;
   }
 }
@@ -219,7 +251,7 @@
     font-size: 1.2rem;
     line-height: calc(16 / 12);
   }
-  .footer-top-text > span {
+  .footer-top-text > .br {
     display: block;
   }
 }

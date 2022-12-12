@@ -1,7 +1,7 @@
 .header {
   background: var(--soft-background);
   padding: 2.4rem 0 2.4rem 0;
-  margin-bottom: 2.8rem;
+  /* margin-bottom: 2.8rem; */
 }
 
 .header-top {
@@ -62,11 +62,10 @@
 .box-action img {
   margin-right: var(--spacing-8);
 }
-.box-action span {
-  cursor: pointer;
+.box-action a {
   transition: all 0.3s;
 }
-.box-action span:hover {
+.box-action a:hover {
   color: var(--color-third);
 }
 
@@ -237,7 +236,7 @@
     max-height: 14.4rem;
     height: 14.4rem;
   }
-  .box-action span {
+  .box-action a {
     display: none;
   }
   .btn-categories {
