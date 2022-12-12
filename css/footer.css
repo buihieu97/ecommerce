@@ -213,3 +213,13 @@
     color: white;
   }
 }
+@media screen and (max-width: 576px) {
+  .footer-top-text {
+    padding: 1.6rem;
+    font-size: 1.2rem;
+    line-height: calc(16 / 12);
+  }
+  .footer-top-text > span {
+    display: block;
+  }
+}

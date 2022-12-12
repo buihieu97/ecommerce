@@ -28,7 +28,6 @@ boxDots.forEach((e, index) => {
       if (i === dots.length - 1) {
         sliderContainer.scrollLeft = widthItem * 2 * countItemVisible * i;
       }
-      //   console.log(sliderContainer.children[0].clientWidth);
     });
   });
   sliderContainer.addEventListener("scroll", (e) => {
